@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Philippines Satellite Locator</title>
+
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    >
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Philippines Satellite Locator</h1>
+        <p>Find cities, barangays and establishments</p>
+    </header>
+
+    <main>
+
+        <form id="searchForm">
+
+            <input
+                type="search"
+                id="cityInput"
+                placeholder="Search city, barangay, mall, school..."
+                required
+            >
+
+            <button type="submit" id="searchButton">
+                Search
+            </button>
+
+        </form>
+
+        <p id="status" role="status">
+            Search a location in the Philippines.
+        </p>
+
+        <div id="map"></div>
+
+    </main>
+
+    <footer>
+        Philippines Satellite Locator
+        <br>
+        Maps © Esri | Data © OpenStreetMap contributors
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
